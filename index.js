@@ -18,7 +18,7 @@ class App extends Component {
   }
 
    handleClick2=()=>{
-    setState({
+    this.setState({
       name: "Nodejs"
     })
    }
@@ -31,7 +31,8 @@ class App extends Component {
         <p>
           Start editing to see some magic happen :)
         </p>
-        <button onClick={this.handleClick}>Click Me</button>
+        <button onClick={this.handleClick}>Click Me</button> <br/> <br/>
+        <button onClick={this.handleClick2}>Click Me2</button>
       </div>
     );
   }
